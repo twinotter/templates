@@ -10,7 +10,26 @@ template: '{"NAME":"ESW01-US","GPIO":[0,0,0,0,21,56,0,0,0,133,9,0,0],"FLAG":1,"B
 link_alt: https://www.etekcity.com/product/100312
 ---
 
-Power mnitoring is **NOT** configured in this template.
+Power monitoring is **NOT** configured in this template.
 
+---
+date: 2019-06-27
+title: ESW01-US
+category: plug
+type: Plug
+standard: us
+link: https://www.amazon.com/Etekcity-Voltson-Outlet-Monitoring-Required/dp/B074GYTRFX 
+image: https://user-images.githubusercontent.com/5904370/56409876-446cef00-627b-11e9-8a12-9a0ed4ef6ee6.png
+template: '{"NAME":"ESW01-US","GPIO":[0,0,0,0,21,52,0,0,132,133,17,0,130],"FLAG":0,"BASE":6}' 
+link_alt: https://www.etekcity.com/product/100312
+---
+
+This second template is based off the Sonoff-POW module and has power monitoring enabled. Only Power and Voltage are measured by the HLW8012 
+because the SEL line is strapped to VCC on the ESW01. The HLW8012 driver correctly recognizes this, but the Energy driver does not
+currently report current as Power / Voltage. So, the Current reading is not accurate. Follow-up with PowerSet and VoltageSet commands since
+the configuration numbers for the HLW8012 are different. 
+
+For sake of reference, in the ESW01-US, the voltage sensor is connected with a 1.92M Ohm resistance (two 953K Ohm resistors). The shunt
+resistor is .002 Ohms. The European version uses 2M Ohm resistance and a .001 Ohm shunt resistor.
 
 
