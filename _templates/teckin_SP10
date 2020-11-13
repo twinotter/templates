@@ -14,4 +14,6 @@ Some current versions sold [here on Amazon](https://amzn.to/35zd6du) are coming 
 
 Tuya Convert error: WARNING: it appears this device does not use an ESP82xx and therefore cannot install ESP based firmware
 
+The <b>Teckin model SP10 (N)</b> is based around an RTL8710B which is an unsupported processor.
+
 Some sold are still successfully converted.   
